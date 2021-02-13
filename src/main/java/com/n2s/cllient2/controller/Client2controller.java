@@ -15,6 +15,7 @@ import java.util.List;
 public class Client2controller {
 @Autowired
 Client2repo repository;
+
 @GetMapping("/get")
 public List<Login_table> getall (){
     return repository.findAll();
